@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //객체 생성
+        var grades = {'egoing' : 10, 'k8805' : 6, 'sorialgi' : 80};
+
+        /*
+        var grades = {};          =  var grades = new Object();
+        grades ['egoing'] = 10;
+        grades ['k8805'] = 6;
+        grades ['sorialgi'] = 80;
+        */
+
+        //alert(grades[egoing]);            //80을 출력
+        alert(grades.sorialgi);
+
+        //key값과 value 값을 출력함.
+        //key라는 변수에 객체의 key 값을 대입함.
+        for(key in grades){
+            document.write("<li>key : " + key + "value : " + grades[key] + "</li>");
+        }
+
+        var grade = {
+            'list' : {'egoing' : 10, 'k8805' : 6, 'sorialgi' : 80},
+            'show' : function(){
+                for(var name in this.list){
+                    console.log(name, this.list[name]);
+                }
+            }
+        }
+
+        grade.show();
+
+
+    </script>
+</body>
+</html>

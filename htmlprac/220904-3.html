@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <ol>
+        <li>HTML</li>
+        <li class="active">CSS</li>
+        <li>JavaScript</li>
+    </ol>
+
+    <script>
+        var li = document.querySelector('li');
+        li.style.color = 'red';
+        //class의 속성 값이 active인 element들을 선택함.
+        var li = document.querySelector('.active');
+        li.style.color = 'blue';
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="greeting.js"></script>
+    <title>Module test</title>
+</head>
+<body>
+
+    <ul id="list">
+        <li>empty</li>
+        <li>empty</li>
+        <li>empty</li>
+        <li>empty</li>
+        <li>empty</li>
+    </ul>
+    
+    //버튼 생성
+    <input type = "button" value="execute" id="execute_btn" />
+
+    <script>
+        //속성 모듈 src를 사용하여 greeting.js 파일을 호출함.
+        alert(welcome());
+        
+        //버튼을 누르면 목록의 내용을 변환시킨다.
+        $('#execute_btn').click(function(){
+            $('#list li').text('coding everybody');
+        })
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //자바 스크립트를 이용하여 웹페이지에 텍스트를 출력한다.
+        //<br /> : 줄바꿈
+        document.write("coding everybody <br />");
+
+        //반복문 (while)
+        var i = 0;
+        while(i < 10){
+            document.write("coding everybody <br />");
+            i = i + 1;
+        }
+
+        //반복문 (for)
+        for(var j = 0; j < 10; j++){
+            document.write("coding everybody <br />");
+        }
+
+        //break, continue
+        for(var j = 0; j < 10; j++){
+            if(i === 8){
+                break;              //반복문 종료
+            }
+
+            else if(i === 5){
+                continue;           //위 조건에서만 종료(skip)
+            }
+
+            document.write("coding everybody <br />");
+        }
+        
+
+        //함수 : 하나의 로직을 재실행 할 수 있도록 하는 것을 코드의 재사용성을 높여줌.
+        function numbering(){
+            //document.write(1);
+            i = 0;
+            while(i < 50){
+                document.write(i * 5);
+                i += 1;
+            }
+        }
+        numbering();
+        
+
+        //함수의 반환 값
+        function get_memnber(){
+            return 'egoing';
+        }
+        alert(get_memnber);
+
+        //함수의 인자
+        function get_argument(arg){
+            return arg;
+        }
+        alert(get_argument(1));
+
+
+        //함수의 재정의
+        numbertype = function(){
+            i = 0;
+            while(i < 10){
+                document.write(i);
+                i+= 1;
+            }
+        }
+        numbertype();
+
+
+        //익명 함수 : 함수의 정의와 호출을 동시에 할 수 있음.(일회성 함수)
+        (function (){
+            i = 0;
+            while(i < 10){
+                document.write(i);
+                i+= 1;
+            }
+        })();
+
+    </script>
+
+
+</body>
+</html>

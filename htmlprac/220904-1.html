@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<!--     
+<body>
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+</ul>
+<script>
+    //TagName(li)을 통해 여러개의 Element를 가져온다.
+    //document = 문서 전체라고 생각한다.
+    var lis = document.getElementsByTagName('li');
+    for(var i=0; i < lis.length; i++){
+        lis[i].style.color='red';       //li의 스타일을 바꾸는 코드
+    }
+</script>
+</body> -->
+<body>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+    <script>
+        var ul = document.getElementsByTagName('ul')[0];
+        var lis = ul.getElementsByTagName('li');
+        for(var i=0; lis.length; i++){
+            lis[i].style.color='red';   
+        }
+    </script>
+</body>
+
+</html>
